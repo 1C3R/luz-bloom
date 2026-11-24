@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce las velas artesanales de Luz &amp; Bloom: aromas, ingredientes y presentaciones.">
+
+    <title>Velas artesanales | Luz &amp; Bloom</title>
+
+    <!-- Recursos del template Assan Beauty Spa -->
+    <link rel="stylesheet" href="vendor/beauty-spa/css/plugins/plugins.css">
+    <link rel="stylesheet" href="vendor/beauty-spa/css/style.css">
+
+    <!-- Adaptación para Luz & Bloom -->
+    <link rel="stylesheet" href="css/tema-luz-bloom.css">
+    <link rel="stylesheet" href="css/vitrinas.css">
+    <link rel="stylesheet" href="css/velas.css">
+    <link rel="stylesheet" href="css/catalogos-template.css">
+
+    <script src="js/catalogos.js" defer></script>
+</head>
+
+<body class="luz-bloom">
+    <header id="inicio" class="default-header">
+        <div class="container cabecera-marca">
+            <div class="marca">
+                <a href="index.html" aria-label="Luz y Bloom, página de inicio">
+                    <img
+                        class="marca-logo"
+                        src="img/logo.webp"
+                        alt="Logo de Luz y Bloom"
+                        width="190"
+                        height="190">
+                </a>
+
+                <h1>Luz &amp; Bloom</h1>
+                <p>Pequeños detalles, momentos para florecer.</p>
+            </div>
+
+            <nav class="canales" aria-label="Canales de contacto">
+                <a
+                    class="btn boton-whatsapp"
+                    href="https://wa.me/56930549400"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    WhatsApp
+                </a>
+
+                <a
+                    class="btn boton-marca"
+                    href="https://www.instagram.com/luzandbloom/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    Instagram
+                </a>
+
+                <a
+                    class="btn boton-marca"
+                    href="https://www.tiktok.com/@luzandbloom"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    TikTok
+                </a>
+            </nav>
+
+            <nav class="menu-principal" aria-label="Menú principal">
+                <ul>
+                    <li>
+                        <a class="btn boton-marca" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="nosotros.html">Quiénes somos</a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container vitrinas velas">
+        <nav class="ruta-catalogo" aria-label="Ruta de navegación">
+            <p>
+                <a href="index.html">Inicio</a> &gt;
+                <a href="productos.html">Productos</a> &gt;
+                <span aria-current="page">Velas</span>
+            </p>
+        </nav>
+
+        <div class="section-title">
+            <h2>Velas artesanales</h2>
+        </div>
+
+        <p>
+            Hay aromas que nos hacen sentir en casa. Descubre nuestras velas
+            hechas a mano y elige entre notas cítricas, especiadas y florales
+            para acompañar tus espacios.
+        </p>
+
+        <p>
+            Cada presentación tiene su propio detalle: flores de cera,
+            figuras botánicas y recipientes que también forman parte del diseño.
+        </p>
+
+        <section class="vitrina" id="vitrina" aria-labelledby="titulo-vitrina">
+            <nav aria-label="Categorías del catálogo">
+                <ul class="vitrina-categorias">
+                    <li>
+                        <a class="btn boton-marca" href="velas.html" aria-current="page">
+                            Velas
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="jabones.html">Jabones</a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="sales.html">Sales de baño</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h3 id="titulo-vitrina">Velas del catálogo</h3>
+
+            <ul class="vitrina-cuadricula" id="tarjetas-velas" hidden></ul>
+
+            <nav
+                class="velas-paginacion"
+                id="paginacion-velas"
+                aria-label="Páginas del catálogo de velas"
+                hidden>
+                <button class="btn boton-marca" id="pagina-anterior" type="button">
+                    Anterior
+                </button>
+                <span id="numero-pagina" aria-live="polite"></span>
+                <button class="btn boton-marca" id="pagina-siguiente" type="button">
+                    Siguiente
+                </button>
+            </nav>
+
+            <div id="fichas-velas">
+                <article class="vela-ficha" id="naranja-canela">
+                    <h3 tabindex="-1">Vela de naranja y canela</h3>
+                    <img
+                        src="img/Mejoradas/20261020_104635-v2.webp"
+                        alt="Vela en vaso de vidrio junto a una naranja y ramas de canela"
+                        width="300">
+
+                    <p>
+                        La frescura de la naranja y el aroma especiado de la canela
+                        se combinan en una vela hecha a mano. Una mezcla cálida
+                        para perfumar tu espacio y acompañar una tarde en casa.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Hecha a base de naranja y canela.</li>
+                        <li><strong>Aroma:</strong> Cítrico, dulce y especiado.</li>
+                        <li><strong>Beneficios sensoriales:</strong> Perfuma el ambiente con notas frescas de naranja y un fondo cálido de canela.</li>
+                        <li><strong>Presentación:</strong> Vaso de vidrio con decoración artesanal.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20la%20vela%20de%20naranja%20y%20canela."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="rosas">
+                    <h3 tabindex="-1">Vela de rosas</h3>
+                    <img
+                        src="img/Mejoradas/20261020_104713-v2.webp"
+                        alt="Vela en vaso de vidrio con base verde y flores de cera rosadas"
+                        width="300">
+
+                    <p>
+                        Un aroma floral y a primavera. Sus tonos verdes y rosados
+                        le dan un aspecto de jardín en miniatura, para decorar
+                        un rincón de tu casa o regalar.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Hecha a base de esencia de rosas.</li>
+                        <li><strong>Aroma:</strong> Floral y dulce.</li>
+                        <li><strong>Beneficios sensoriales:</strong> Aporta un perfume floral al ambiente y acompaña tus momentos de descanso.</li>
+                        <li><strong>Presentación:</strong> Vaso de vidrio con flores rosadas que evoca el aroma floral y la primavera.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20la%20vela%20de%20rosas."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="jardin-floral">
+                    <h3 tabindex="-1">Vela Jardín floral</h3>
+                    <img
+                        src="img/Mejoradas/20261020_104932-v2.webp"
+                        alt="Vela en vaso de vidrio con figuras verdes y rosadas con forma de suculentas"
+                        width="300">
+
+                    <p>
+                        Un pequeño jardín en tonos verdes y rosados. Esta vela
+                        combina un aroma floral con figuras de suculentas, para
+                        quienes disfrutan de las plantas y los detalles hechos a mano.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Base de cera para velas y fragancia floral.</li>
+                        <li><strong>Aroma:</strong> Floral.</li>
+                        <li><strong>Beneficios sensoriales:</strong> Perfuma el espacio y suma un detalle botánico a la decoración.</li>
+                        <li><strong>Presentación:</strong> Vaso de vidrio con figuras de cera inspiradas en suculentas.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20la%20vela%20Jard%C3%ADn%20floral."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="rosa-decorativa">
+                    <h3 tabindex="-1">Vela de rosas en recipiente decorado</h3>
+                    <img
+                        src="img/Mejoradas/20261020_104755-v2.webp"
+                        alt="Vela con forma de rosa blanca y rosada en un recipiente rojo estampado"
+                        width="300">
+
+                    <p>
+                        Una rosa en un recipiente cerámico. Su aroma de rosas y sus
+                        colores la convierten en un detalle para regalar o disfrutar
+                        en casa.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Esencia de rosas.</li>
+                        <li><strong>Aroma:</strong> Floral y dulce.</li>
+                        <li><strong>Beneficios sensoriales:</strong> Aromatiza el ambiente con notas de rosas y aporta color a tus espacios.</li>
+                        <li><strong>Presentación:</strong> Recipiente cerámico decorado con una rosa de cera hecha a mano.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20la%20vela%20de%20rosas%20en%20recipiente%20rojo."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="lavanda">
+                    <h3 tabindex="-1">Vela de lavanda</h3>
+                    <img
+                        src="img/Mejoradas/20261020_110447-v2.webp"
+                        alt="Vela con una flor de cera violeta en un recipiente cerámico blanco"
+                        width="300">
+
+                    <p>
+                        El aroma herbal de la lavanda en una presentación sencilla:
+                        un recipiente blanco y una rosa violeta. Para perfumar ese
+                        rincón donde te gusta leer, conversar o hacer una pausa.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Esencia de lavanda.</li>
+                        <li><strong>Aroma:</strong> Herbal y floral.</li>
+                        <li><strong>Beneficios sensoriales:</strong> Aporta un aroma de lavanda al espacio, como parte de tu ambiente de descanso.</li>
+                        <li><strong>Presentación:</strong> Recipiente cerámico blanco con una rosa violeta.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20la%20vela%20de%20lavanda."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="menta-romero">
+                    <h3 tabindex="-1">Vela de menta y romero</h3>
+                    <img
+                        src="img/Mejoradas/20261020_104449-v3.webp"
+                        alt="Vela artesanal de menta y romero"
+                        width="300">
+
+                    <p>
+                        La menta se siente primero. Después queda el aroma herbal
+                        del romero, parecido al de una rama recién cortada.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Base de cera con aroma de menta y romero.</li>
+                        <li><strong>Aroma:</strong> Fresco y herbal, con una nota mentolada.</li>
+                        <li><strong>Beneficios sensoriales:</strong> Perfuma el ambiente con la frescura de la menta y el fondo herbal del romero.</li>
+                        <li><strong>Presentación:</strong> Vela artesanal en recipiente individual.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20la%20vela%20de%20menta%20y%20romero."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="coco">
+                    <h3 tabindex="-1">Vela aromática de coco</h3>
+                    <img
+                        src="img/Mejoradas/20261020_104854-v2.webp"
+                        alt="Vela aromática de coco en un envase metálico con tapa"
+                        width="300">
+
+                    <p>
+                        Una vela de aroma dulce a coco en un envase metálico
+                        con tapa, fácil de guardar cuando ya está fría.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Base de cera con fragancia de coco.</li>
+                        <li><strong>Aroma:</strong> Dulce, con notas cremosas de coco.</li>
+                        <li><strong>Beneficios sensoriales:</strong> Deja un perfume dulce a coco en el ambiente.</li>
+                        <li><strong>Presentación:</strong> Envase metálico con tapa.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20la%20vela%20arom%C3%A1tica%20de%20coco."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="pedidos-catalogo" aria-labelledby="titulo-pedidos">
+            <h2 id="titulo-pedidos">¿Cuál es tu favorita?</h2>
+
+            <p>
+                Escríbenos para conocer los precios, tamaños y modelos disponibles.
+                También podemos ayudarte a elegir un detalle para regalar.
+            </p>
+
+            <div class="velas-controles">
+                <a
+                    class="btn boton-whatsapp"
+                    href="https://wa.me/56930549400"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    Consultar por WhatsApp
+                </a>
+                <a class="btn boton-marca" href="productos.html">
+                    Volver a las categorías
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer pie-marca">
+        <div class="container text-center">
+            <p>Luz &amp; Bloom — Velas y jabones artesanales.</p>
+            <p>Hecho a mano, pensado para tus pequeños momentos.</p>
+
+            <div class="pie-botones">
+                <a class="btn boton-destacado" href="contacto.html">
+                    Contáctanos
+                </a>
+                <a class="btn boton-marca" href="#inicio">
+                    Volver al inicio
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <template id="plantilla-vela">
+        <li class="vitrina-tarjeta vela-tarjeta">
+            <div class="vela-columna">
+                <button class="vela-foto" type="button" aria-haspopup="dialog">
+                    <img alt="">
+                </button>
+
+                <div class="vela-miniaturas" role="group" hidden></div>
+
+                <p class="vitrina-nombre"></p>
+
+                <div class="vela-tarjeta-boton">
+                    <button
+                        class="btn boton-destacado vela-ver"
+                        type="button"
+                        aria-expanded="false">
+                        Ver
+                    </button>
+                </div>
+            </div>
+        </li>
+    </template>
+
+    <dialog id="visor-vela" aria-label="Fotografía ampliada">
+        <img id="foto-visor" alt="">
+    </dialog>
+</body>
+</html>

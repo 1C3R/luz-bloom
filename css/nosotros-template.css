@@ -1,0 +1,71 @@
+.nosotros {
+    padding: 3rem 0;
+}
+
+.luz-bloom .nosotros h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.historia {
+    margin-bottom: 2rem;
+}
+
+/* Misión y visión */
+
+.columna-identidad {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.tarjeta-identidad {
+    width: 100%;
+    min-width: 0;
+    padding: 1.5rem;
+    border: 1px solid var(--borde);
+    border-top: 4px solid var(--oliva);
+    border-radius: 10px;
+    background-color: var(--superficie);
+}
+
+.tarjeta-identidad p:last-child {
+    margin-bottom: 0;
+}
+
+/* Valores */
+
+.valores {
+    margin-top: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    background-color: var(--superficie);
+}
+
+.valores ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.valores li {
+    margin-bottom: 0.85rem;
+}
+
+.valores li:last-child {
+    margin-bottom: 0;
+}
+
+.acceso-productos {
+    margin-top: 2rem;
+}
+
+@media (max-width: 767px) {
+    .nosotros {
+        padding: 2rem 0;
+    }
+
+    .tarjeta-identidad,
+    .valores {
+        padding: 1.25rem;
+    }
+}

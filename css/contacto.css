@@ -1,0 +1,91 @@
+.pagina-interior > .contacto-accesos ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem;
+    max-width: 34rem;
+    margin: 1.25rem 0;
+}
+
+.pagina-interior > .contacto-accesos li a {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    padding: 0.65rem 0.35rem;
+    border-color: var(--cacao);
+}
+
+/* Botón que abre la conversación */
+.portada .boton-inicio.boton-whatsapp {
+    border-color: #18833f;
+    background-color: #25d366;
+    color: #102a1b;
+}
+
+.portada .boton-inicio.boton-whatsapp:hover {
+    border-color: #126a33;
+    background-color: #20b957;
+    color: #102a1b;
+}
+
+/* Botones del formulario y redes */
+.contacto-acciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+#formulario .contacto-acciones button {
+    margin: 0;
+}
+
+/* Íconos de Instagram y TikTok */
+a.boton-inicio[href^="https://www.instagram.com/"] {
+    --icono-red: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2'%3E%3Crect x='3' y='3' width='18' height='18' rx='5'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Ccircle cx='17.5' cy='6.5' r='1' fill='black' stroke='none'/%3E%3C/svg%3E");
+}
+
+a.boton-inicio[href^="https://www.tiktok.com/"] {
+    --icono-red: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2h3a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.75V16a6 6 0 1 1-6-6h1v3h-1a3 3 0 1 0 3 3V2Z'/%3E%3C/svg%3E");
+}
+
+.portada #inicio .boton-inicio:is(
+    [href^="https://www.instagram.com/"],
+    [href^="https://www.tiktok.com/"]
+),
+.portada #redes .boton-inicio:is(
+    [href^="https://www.instagram.com/"],
+    [href^="https://www.tiktok.com/"]
+) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.boton-inicio:is(
+    [href^="https://www.instagram.com/"],
+    [href^="https://www.tiktok.com/"]
+)::before {
+    content: "";
+    flex: 0 0 1.1em;
+    width: 1.1em;
+    height: 1.1em;
+    background-color: currentColor;
+    -webkit-mask: var(--icono-red) center / contain no-repeat;
+    mask: var(--icono-red) center / contain no-repeat;
+}
+
+#whatsapp,
+#formulario,
+#redes {
+    scroll-margin-top: 1rem;
+}
+
+@media (max-width: 420px) {
+    .pagina-interior > .contacto-accesos ul {
+        gap: 0.35rem;
+    }
+
+    .pagina-interior > .contacto-accesos li a {
+        font-size: 0.85rem;
+    }
+}

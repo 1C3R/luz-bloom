@@ -1,0 +1,143 @@
+/*
+ * Página de contacto de Luz & Bloom.
+ */
+
+.contacto {
+    padding: 3rem 0;
+}
+
+.luz-bloom .contacto h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Accesos a las secciones */
+
+.contacto-accesos ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem;
+    max-width: 36rem;
+    margin: 1.5rem 0 2rem;
+    padding: 0;
+    list-style: none;
+}
+
+.contacto-accesos .btn {
+    width: 100%;
+    height: 100%;
+}
+
+/* Secciones */
+
+.contacto-panel {
+    margin-bottom: 1.5rem;
+    padding: 1.75rem;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    background-color: var(--superficie);
+    scroll-margin-top: 1rem;
+}
+
+.contacto-panel:last-child {
+    margin-bottom: 0;
+}
+
+/* Formulario */
+
+.contacto fieldset {
+    min-width: 0;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    border: 0;
+}
+
+.contacto legend {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--borde);
+    color: var(--cacao);
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contacto label {
+    display: inline-block;
+    margin-bottom: 0.45rem;
+    font-weight: bold;
+}
+
+.luz-bloom .contacto .form-control {
+    width: 100%;
+    height: auto;
+    min-height: 2.8rem;
+    padding: 0.7rem;
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    background-color: white;
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.luz-bloom .contacto .form-control:focus {
+    border-color: var(--oliva);
+    outline: 2px solid var(--oliva);
+    outline-offset: 2px;
+    box-shadow: none;
+}
+
+.contacto textarea.form-control {
+    resize: vertical;
+}
+
+.contacto-acciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.contacto .contacto-acciones .btn {
+    margin: 0;
+}
+
+.nota-redes {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+/* Icono de TikTok */
+
+.icono-tiktok {
+    display: inline-block;
+    flex: 0 0 1em;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2h3a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.75V16a6 6 0 1 1-6-6h1v3h-1a3 3 0 1 0 3 3V2Z'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2h3a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.75V16a6 6 0 1 1-6-6h1v3h-1a3 3 0 1 0 3 3V2Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+@media (max-width: 767px) {
+    .contacto {
+        padding: 2rem 0;
+    }
+
+    .contacto-panel {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .contacto-accesos ul {
+        gap: 0.35rem;
+    }
+
+    .luz-bloom .contacto-accesos .btn {
+        padding: 0.6rem 0.3rem;
+        font-size: 0.85rem;
+    }
+}

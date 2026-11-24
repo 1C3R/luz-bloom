@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jabones artesanales de Luz &amp; Bloom: variedades florales, de lavanda, arroz, manzanilla y café.">
+
+    <title>Jabones artesanales | Luz &amp; Bloom</title>
+
+    <!-- Recursos del template Assan Beauty Spa -->
+    <link rel="stylesheet" href="vendor/beauty-spa/css/plugins/plugins.css">
+    <link rel="stylesheet" href="vendor/beauty-spa/css/style.css">
+
+    <!-- Adaptación para Luz & Bloom -->
+    <link rel="stylesheet" href="css/tema-luz-bloom.css">
+    <link rel="stylesheet" href="css/vitrinas.css">
+    <link rel="stylesheet" href="css/velas.css">
+    <link rel="stylesheet" href="css/catalogos-template.css">
+
+    <script src="js/catalogos.js" defer></script>
+</head>
+
+<body class="luz-bloom">
+    <header id="inicio" class="default-header">
+        <div class="container cabecera-marca">
+            <div class="marca">
+                <a href="index.html" aria-label="Luz y Bloom, página de inicio">
+                    <img
+                        class="marca-logo"
+                        src="img/logo.webp"
+                        alt="Logo de Luz y Bloom"
+                        width="190"
+                        height="190">
+                </a>
+
+                <h1>Luz &amp; Bloom</h1>
+                <p>Pequeños detalles, momentos para florecer.</p>
+            </div>
+
+            <nav class="canales" aria-label="Canales de contacto">
+                <a
+                    class="btn boton-whatsapp"
+                    href="https://wa.me/56930549400"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    WhatsApp
+                </a>
+
+                <a
+                    class="btn boton-marca"
+                    href="https://www.instagram.com/luzandbloom/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    Instagram
+                </a>
+
+                <a
+                    class="btn boton-marca"
+                    href="https://www.tiktok.com/@luzandbloom"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    TikTok
+                </a>
+            </nav>
+
+            <nav class="menu-principal" aria-label="Menú principal">
+                <ul>
+                    <li>
+                        <a class="btn boton-marca" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="nosotros.html">Quiénes somos</a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container vitrinas velas">
+        <nav class="ruta-catalogo" aria-label="Ruta de navegación">
+            <p>
+                <a href="index.html">Inicio</a> &gt;
+                <a href="productos.html">Productos</a> &gt;
+                <span aria-current="page">Jabones</span>
+            </p>
+        </nav>
+
+        <div class="section-title">
+            <h2>Jabones artesanales</h2>
+        </div>
+
+        <p>
+            Jabones hechos a mano con ingredientes de inspiración natural.
+            Lavanda, arroz, manzanilla, café y clavo de olor en distintas
+            formas y presentaciones.
+        </p>
+
+        <p>
+            Elige tu variedad favorita para el cuidado diario o encuentra
+            una presentación para regalar.
+        </p>
+
+        <section class="vitrina" id="vitrina" aria-labelledby="titulo-vitrina">
+            <nav aria-label="Categorías del catálogo">
+                <ul class="vitrina-categorias">
+                    <li>
+                        <a class="btn boton-marca" href="velas.html">Velas</a>
+                    </li>
+                    <li>
+                        <a
+                            class="btn boton-marca"
+                            href="jabones.html"
+                            aria-current="page">
+                            Jabones
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="sales.html">Sales de baño</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h3 id="titulo-vitrina">Jabones del catálogo</h3>
+
+            <ul class="vitrina-cuadricula" id="tarjetas-velas" hidden></ul>
+
+            <nav
+                class="velas-paginacion"
+                id="paginacion-velas"
+                aria-label="Páginas del catálogo de jabones"
+                hidden>
+                <button class="btn boton-marca" id="pagina-anterior" type="button">
+                    Anterior
+                </button>
+                <span id="numero-pagina" aria-live="polite"></span>
+                <button class="btn boton-marca" id="pagina-siguiente" type="button">
+                    Siguiente
+                </button>
+            </nav>
+
+            <div id="fichas-velas">
+                <article class="vela-ficha" id="lavanda">
+                    <h3 tabindex="-1">Jabón de lavanda</h3>
+                    <img
+                        src="img/Mejoradas/20261020_105540-v2.webp"
+                        alt="Jabones violetas de lavanda con detalles de flores secas"
+                        width="300">
+
+                    <p>
+                        Un jabón de aroma herbal y floral, con el color
+                        característico de la lavanda y flores secas que forman
+                        parte de su acabado artesanal.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Lavanda y esencia de lavanda sobre una base de jabón.</li>
+                        <li><strong>Aroma:</strong> Herbal y floral.</li>
+                        <li><strong>Beneficios:</strong> Limpia la piel y aporta el aroma de la lavanda durante el lavado.</li>
+                        <li><strong>Presentación:</strong> Barra violeta con detalles de flores secas.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20el%20jab%C3%B3n%20de%20lavanda."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="arroz">
+                    <h3 tabindex="-1">Jabón de arroz</h3>
+                    <img
+                        src="img/Mejoradas/20261020_105752-v2.webp"
+                        alt="Barras de jabón de color claro junto a granos de arroz"
+                        width="300">
+
+                    <p>
+                        Hecho a base de arroz, en una barra de tono claro y
+                        acabado sencillo. Una alternativa para quienes
+                        prefieren un jabón sin decoraciones.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Arroz sobre una base de jabón.</li>
+                        <li><strong>Características:</strong> Barra de color claro.</li>
+                        <li><strong>Beneficios:</strong> Ayuda a retirar la suciedad de la piel durante el lavado.</li>
+                        <li><strong>Presentación:</strong> Barra rectangular con envoltorio individual.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20el%20jab%C3%B3n%20de%20arroz."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="cafe-clavo">
+                    <h3 tabindex="-1">Jabón de café y clavo de olor</h3>
+                    <img
+                        src="img/Mejoradas/20261020_110356-v2.webp"
+                        alt="Jabones marrones con formas de flores y hojas junto a clavos de olor"
+                        width="300">
+
+                    <p>
+                        El aroma del café se mezcla con las notas especiadas
+                        del clavo de olor. Jabones de tono marrón, moldeados
+                        con formas de flores y hojas.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Café y clavo de olor sobre una base de jabón.</li>
+                        <li><strong>Aroma:</strong> Café con notas cálidas y especiadas.</li>
+                        <li><strong>Beneficios:</strong> Limpia la piel y aporta un aroma de café y especias durante su uso.</li>
+                        <li><strong>Presentación:</strong> Piezas con formas de flores y hojas, envueltas individualmente.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20el%20jab%C3%B3n%20de%20caf%C3%A9%20y%20clavo%20de%20olor."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="regalos">
+                    <h3 tabindex="-1">Jabones para regalo</h3>
+                    <img
+                        src="img/Mejoradas/20261020_110549-v2.webp"
+                        alt="Jabones artesanales en cajas redondas con motivos de lavanda"
+                        width="300">
+
+                    <p>
+                        Nuestros jabones también se presentan en cajas decoradas,
+                        listos para regalar. Un detalle sencillo para un cumpleaños,
+                        un agradecimiento o una ocasión especial.
+                    </p>
+
+                    <ul>
+                        <li><strong>Contenido:</strong> Jabón artesanal con envoltorio individual.</li>
+                        <li><strong>Variedades:</strong> Según disponibilidad.</li>
+                        <li><strong>Presentación:</strong> Caja redonda con motivos florales.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20las%20presentaciones%20de%20jabones%20para%20regalo."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="aromaticos-colores">
+                    <h3 tabindex="-1">Jabones aromáticos de colores</h3>
+                    <img
+                        src="img/Mejoradas/20261020_105025-v2.webp"
+                        alt="Jabones artesanales aromáticos de distintos colores"
+                        width="300">
+
+                    <p>
+                        Jabones de distintos colores para usar en el baño
+                        o combinar en un regalo.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Base de jabón, fragancia y color según la variedad.</li>
+                        <li><strong>Aroma:</strong> Varía según la pieza.</li>
+                        <li><strong>Beneficios:</strong> Limpian la piel y aportan aroma durante el lavado.</li>
+                        <li><strong>Presentación:</strong> Piezas artesanales en distintos colores.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20los%20jabones%20arom%C3%A1ticos%20de%20colores."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="aromaticos-florales">
+                    <h3 tabindex="-1">Jabones aromáticos florales</h3>
+                    <img
+                        src="img/Mejoradas/20261020_105133-v2.webp"
+                        alt="Jabones artesanales de aroma floral"
+                        width="300">
+
+                    <p>
+                        Una selección de jabones con perfume floral.
+                        Puedes combinar varias piezas si quieres armar un regalo.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Base de jabón y fragancia floral.</li>
+                        <li><strong>Aroma:</strong> Floral.</li>
+                        <li><strong>Beneficios:</strong> Limpian la piel y perfuman el lavado con notas florales.</li>
+                        <li><strong>Presentación:</strong> Piezas artesanales de la línea floral.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20los%20jabones%20arom%C3%A1ticos%20florales."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="bano-floral">
+                    <h3 tabindex="-1">Jabón floral para el baño</h3>
+                    <img
+                        src="img/Mejoradas/20261020_105230-v2.webp"
+                        alt="Jabón artesanal floral para el baño"
+                        width="300">
+
+                    <p>
+                        Un jabón de aroma floral pensado para la ducha
+                        o el baño de todos los días.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Base de jabón y fragancia floral.</li>
+                        <li><strong>Aroma:</strong> Floral.</li>
+                        <li><strong>Beneficios:</strong> Limpia la piel y aporta un perfume floral durante el baño.</li>
+                        <li><strong>Presentación:</strong> Pieza individual de jabón artesanal.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20el%20jab%C3%B3n%20floral%20para%20el%20ba%C3%B1o."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="aromatico-floral">
+                    <h3 tabindex="-1">Jabón aromático floral</h3>
+                    <img
+                        src="img/Mejoradas/20261020_105346-v2.webp"
+                        alt="Pieza de jabón aromático floral"
+                        width="300">
+
+                    <p>
+                        Una pieza individual con perfume de flores,
+                        para dejar junto al lavamanos o sumar a un regalo.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Base de jabón y fragancia floral.</li>
+                        <li><strong>Aroma:</strong> Floral.</li>
+                        <li><strong>Beneficios:</strong> Limpia la piel y aporta aroma durante el lavado.</li>
+                        <li><strong>Presentación:</strong> Jabón aromático individual.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20el%20jab%C3%B3n%20arom%C3%A1tico%20floral."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="manzanilla">
+                    <h3 tabindex="-1">Jabón en barra de manzanilla</h3>
+                    <img
+                        src="img/Mejoradas/20261020_105841-v2.webp"
+                        alt="Jabón artesanal en barra de manzanilla"
+                        width="300">
+
+                    <p>
+                        Una barra con aroma suave a manzanilla para el lavado diario.
+                    </p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Manzanilla sobre una base de jabón.</li>
+                        <li><strong>Aroma:</strong> Herbal, con una nota floral suave.</li>
+                        <li><strong>Beneficios:</strong> Limpia la piel y aporta el aroma de la manzanilla durante el lavado.</li>
+                        <li><strong>Presentación:</strong> Jabón artesanal en barra.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20el%20jab%C3%B3n%20en%20barra%20de%20manzanilla."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+
+                <article class="vela-ficha" id="cafe">
+                    <h3 tabindex="-1">Jabón de café</h3>
+                    <img
+                        src="img/Mejoradas/20261020_110308-v2.webp"
+                        alt="Jabón artesanal de café"
+                        width="300">
+
+                    <p>Un jabón artesanal con el aroma tostado del café.</p>
+
+                    <ul>
+                        <li><strong>Ingredientes:</strong> Café sobre una base de jabón.</li>
+                        <li><strong>Aroma:</strong> Café tostado.</li>
+                        <li><strong>Beneficios:</strong> Limpia la piel y aporta notas de café durante el lavado.</li>
+                        <li><strong>Presentación:</strong> Pieza de jabón artesanal.</li>
+                    </ul>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20el%20jab%C3%B3n%20de%20caf%C3%A9."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="pedidos-catalogo" aria-labelledby="titulo-pedidos">
+            <h2 id="titulo-pedidos">Elige tu jabón</h2>
+            <p>Escríbenos para conocer los precios, tamaños y variedades disponibles.</p>
+
+            <div class="velas-controles">
+                <a
+                    class="btn boton-whatsapp"
+                    href="https://wa.me/56930549400"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    Consultar por WhatsApp
+                </a>
+
+                <a class="btn boton-marca" href="productos.html">
+                    Volver a las categorías
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer pie-marca">
+        <div class="container text-center">
+            <p>Luz &amp; Bloom — Velas y jabones artesanales.</p>
+            <p>Hecho a mano, pensado para tus pequeños momentos.</p>
+
+            <div class="pie-botones">
+                <a class="btn boton-destacado" href="contacto.html">
+                    Contáctanos
+                </a>
+                <a class="btn boton-marca" href="#inicio">
+                    Volver al inicio
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <template id="plantilla-vela">
+        <li class="vitrina-tarjeta vela-tarjeta">
+            <div class="vela-columna">
+                <button class="vela-foto" type="button" aria-haspopup="dialog">
+                    <img alt="">
+                </button>
+
+                <div class="vela-miniaturas" role="group" hidden></div>
+
+                <p class="vitrina-nombre"></p>
+
+                <div class="vela-tarjeta-boton">
+                    <button
+                        class="btn boton-destacado vela-ver"
+                        type="button"
+                        aria-expanded="false">
+                        Ver
+                    </button>
+                </div>
+            </div>
+        </li>
+    </template>
+
+    <dialog id="visor-vela" aria-label="Fotografía ampliada">
+        <img id="foto-visor" alt="">
+    </dialog>
+</body>
+</html>

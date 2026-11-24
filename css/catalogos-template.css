@@ -1,0 +1,205 @@
+/*
+ * Adaptación de los catálogos interactivos al template Beauty Spa.
+ */
+
+/* Navegación y títulos */
+
+.ruta-catalogo {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.ruta-catalogo a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.luz-bloom .vitrina > h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+/* Tarjetas */
+
+.luz-bloom .vitrina-tarjeta {
+    overflow: hidden;
+}
+
+.luz-bloom .vitrina-tarjeta .vela-foto img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.luz-bloom .vitrina-nombre {
+    color: var(--cacao);
+}
+
+.luz-bloom .vela-foto {
+    cursor: pointer;
+}
+
+.luz-bloom .vela-abierta .vela-foto {
+    cursor: zoom-in;
+}
+
+.luz-bloom .vela-ficha h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.vela-ficha li {
+    margin-bottom: 0.6rem;
+}
+
+.vela-ficha > p:last-child {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+/* Respaldo del catálogo cuando se muestran las fichas completas */
+
+#fichas-velas > .vela-ficha {
+    margin-top: 1rem;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    background-color: var(--superficie);
+}
+
+/* Paginación */
+
+.luz-bloom .velas-paginacion .btn:disabled {
+    border-color: var(--borde);
+    background-color: var(--fondo);
+    color: #695c50;
+    cursor: default;
+    opacity: 1;
+}
+
+/* Sección final */
+
+.pedidos-catalogo {
+    padding: 1.5rem 0 0.5rem;
+}
+
+.luz-bloom .pedidos-catalogo h2 {
+    font-size: 1.8rem;
+}
+
+.pedidos-catalogo p {
+    max-width: 72ch;
+}
+
+/* Visor de fotografías */
+
+#visor-vela {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 1rem;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    overflow: hidden;
+    cursor: zoom-out;
+}
+
+#visor-vela[open] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#visor-vela::backdrop {
+    background-color: rgba(36, 24, 18, 0.88);
+}
+
+#foto-visor {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: calc(100vw - 8rem);
+    max-height: calc(100vh - 2rem);
+    max-height: calc(100dvh - 2rem);
+    border-radius: 8px;
+    object-fit: contain;
+    cursor: zoom-out;
+}
+
+#visor-vela .visor-flecha {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    transform: translateY(-50%);
+    border: 1px solid var(--borde);
+    border-radius: 50%;
+    background-color: var(--superficie);
+    color: var(--cacao);
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+#visor-vela .visor-anterior {
+    left: 0.75rem;
+}
+
+#visor-vela .visor-siguiente {
+    right: 0.75rem;
+}
+
+#visor-vela .visor-flecha:hover {
+    border-color: var(--oliva);
+    background-color: var(--oliva);
+    color: white;
+}
+
+#visor-vela .visor-flecha:focus-visible {
+    outline: 3px solid white !important;
+    outline-offset: 4px;
+}
+
+#visor-vela .visor-flecha[hidden] {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .vitrina {
+        padding: 0.85rem;
+    }
+
+    .luz-bloom .vela-ficha h3 {
+        font-size: 1.3rem;
+    }
+
+    #foto-visor {
+        max-width: calc(100vw - 6.5rem);
+    }
+
+    #visor-vela .visor-flecha {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 2rem;
+    }
+
+    #visor-vela .visor-anterior {
+        left: 0.4rem;
+    }
+
+    #visor-vela .visor-siguiente {
+        right: 0.4rem;
+    }
+}

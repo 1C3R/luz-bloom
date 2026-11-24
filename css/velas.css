@@ -1,0 +1,181 @@
+.velas [hidden] {
+    display: none;
+}
+
+.velas > .vitrina {
+    background-color: #f1e6d1;
+}
+
+.velas .vitrina-categorias a[aria-current="page"] {
+    background-color: var(--cacao);
+    color: #fff;
+}
+
+.velas button.boton-inicio {
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.velas button.boton-inicio:disabled {
+    border-color: var(--borde);
+    background-color: var(--fondo);
+    color: #695c50;
+    cursor: default;
+}
+
+.vela-columna {
+    display: flex;
+    min-width: 0;
+    height: 100%;
+    flex-direction: column;
+}
+
+.vela-foto {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: 0.65rem 0.65rem 0 0;
+    background: transparent;
+    cursor: zoom-in;
+}
+
+.vela-columna .vitrina-nombre {
+    margin: 0;
+}
+
+.vela-tarjeta-boton {
+    padding: 0.55rem 0.9rem 0.9rem;
+}
+
+.vela-ver {
+    min-width: 4.5rem;
+}
+
+/* La tarjeta se ensancha para mostrar la ficha junto a la foto. */
+.velas .vela-tarjeta.vela-abierta {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    align-items: start;
+    height: auto;
+    border-color: var(--oliva);
+    box-shadow: 0 0 0 2px var(--oliva);
+}
+
+.vela-abierta .vela-columna {
+    height: auto;
+}
+
+.vela-abierta .vela-foto img {
+    border-radius: 0.65rem 0 0 0;
+}
+
+.vela-ficha {
+    min-width: 0;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    overflow-wrap: anywhere;
+}
+
+.vela-abierta > .vela-ficha {
+    border-left: 1px solid var(--borde);
+}
+
+/* Las fotos de la ficha se muestran en la columna de la tarjeta. */
+.vela-abierta > .vela-ficha img {
+    display: none;
+}
+
+.vela-ficha h3 {
+    scroll-margin-top: 1rem;
+}
+
+.vela-ficha > ul {
+    padding-left: 1.25rem;
+}
+
+/* Las miniaturas se muestran si tiene más de una foto. */
+.vela-miniaturas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    padding: 0.75rem 0.9rem 0;
+}
+
+.vela-miniatura {
+    width: 3.5rem;
+    padding: 0.15rem;
+    border: 2px solid var(--borde);
+    border-radius: 0.35rem;
+    background: var(--superficie);
+    cursor: pointer;
+}
+
+.vela-miniatura[aria-pressed="true"] {
+    border-color: var(--oliva);
+}
+
+.vela-miniatura img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 0.2rem;
+}
+
+.velas-paginacion,
+.velas-controles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.velas-paginacion {
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+/* Visor sin botones visibles. */
+#visor-vela {
+    width: fit-content;
+    max-width: calc(100% - 2rem);
+    max-height: calc(100% - 2rem);
+    padding: 0;
+    border: 0;
+    border-radius: 0.5rem;
+    background: transparent;
+    overflow: hidden;
+}
+
+#visor-vela::backdrop {
+    background-color: rgba(36, 24, 18, 0.84);
+}
+
+#foto-visor {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(88vw, 70rem);
+    max-height: 88vh;
+    object-fit: contain;
+}
+
+@media (max-width: 700px) {
+    .velas .vela-tarjeta.vela-abierta {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .vela-abierta .vela-foto img {
+        border-radius: 0.65rem 0.65rem 0 0;
+    }
+
+    .vela-abierta > .vela-ficha {
+        border-top: 1px solid var(--borde);
+        border-left: 0;
+    }
+}
+
+.vela-abierta .vela-tarjeta-boton {
+    display: none;
+}

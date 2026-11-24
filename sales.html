@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sales de baño artesanales de Luz &amp; Bloom, con manzanilla, caléndula y pétalos de rosa.">
+
+    <title>Sales de baño | Luz &amp; Bloom</title>
+
+    <!-- Recursos del template Assan Beauty Spa -->
+    <link rel="stylesheet" href="vendor/beauty-spa/css/plugins/plugins.css">
+    <link rel="stylesheet" href="vendor/beauty-spa/css/style.css">
+
+    <!-- Adaptación para Luz & Bloom -->
+    <link rel="stylesheet" href="css/tema-luz-bloom.css">
+    <link rel="stylesheet" href="css/vitrinas.css">
+    <link rel="stylesheet" href="css/velas.css">
+    <link rel="stylesheet" href="css/catalogos-template.css">
+
+    <script src="js/catalogos.js" defer></script>
+</head>
+
+<body class="luz-bloom">
+    <header id="inicio" class="default-header">
+        <div class="container cabecera-marca">
+            <div class="marca">
+                <a href="index.html" aria-label="Luz y Bloom, página de inicio">
+                    <img
+                        class="marca-logo"
+                        src="img/logo.webp"
+                        alt="Logo de Luz y Bloom"
+                        width="190"
+                        height="190">
+                </a>
+
+                <h1>Luz &amp; Bloom</h1>
+                <p>Pequeños detalles, momentos para florecer.</p>
+            </div>
+
+            <nav class="canales" aria-label="Canales de contacto">
+                <a
+                    class="btn boton-whatsapp"
+                    href="https://wa.me/56930549400"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    WhatsApp
+                </a>
+
+                <a
+                    class="btn boton-marca"
+                    href="https://www.instagram.com/luzandbloom/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    Instagram
+                </a>
+
+                <a
+                    class="btn boton-marca"
+                    href="https://www.tiktok.com/@luzandbloom"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    TikTok
+                </a>
+            </nav>
+
+            <nav class="menu-principal" aria-label="Menú principal">
+                <ul>
+                    <li>
+                        <a class="btn boton-marca" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="productos.html">
+                            Productos
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="nosotros.html">
+                            Quiénes somos
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container vitrinas velas">
+        <nav class="ruta-catalogo" aria-label="Ruta de navegación">
+            <p>
+                <a href="index.html">Inicio</a> &gt;
+                <a href="productos.html">Productos</a> &gt;
+                <span aria-current="page">Sales de baño</span>
+            </p>
+        </nav>
+
+        <div class="section-title">
+            <h2>Sales de baño</h2>
+        </div>
+
+        <p>
+            Sales, flores y hierbas en una mezcla artesanal para disfrutar
+            del baño. Con aromas de inspiración natural y una presentación
+            sencilla.
+        </p>
+
+        <section class="vitrina" id="vitrina" aria-labelledby="titulo-vitrina">
+            <nav aria-label="Categorías del catálogo">
+                <ul class="vitrina-categorias">
+                    <li>
+                        <a class="btn boton-marca" href="velas.html">
+                            Velas
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn boton-marca" href="jabones.html">
+                            Jabones
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="btn boton-marca"
+                            href="sales.html"
+                            aria-current="page">
+                            Sales de baño
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h3 id="titulo-vitrina">Sales de baño del catálogo</h3>
+
+            <ul class="vitrina-cuadricula" id="tarjetas-velas" hidden></ul>
+
+            <nav
+                class="velas-paginacion"
+                id="paginacion-velas"
+                aria-label="Páginas del catálogo de sales de baño"
+                hidden>
+                <button
+                    class="btn boton-marca"
+                    id="pagina-anterior"
+                    type="button">
+                    Anterior
+                </button>
+
+                <span id="numero-pagina" aria-live="polite"></span>
+
+                <button
+                    class="btn boton-marca"
+                    id="pagina-siguiente"
+                    type="button">
+                    Siguiente
+                </button>
+            </nav>
+
+            <div id="fichas-velas">
+                <article class="vela-ficha" id="sales-botanicas">
+                    <h3 tabindex="-1">Sales de baño con flores y hierbas</h3>
+
+                    <img
+                        src="img/Mejoradas/20261020_110623-v2.webp"
+                        alt="Sales de baño con flores y hierbas en bolsas de papel kraft con ventana"
+                        width="300">
+
+                    <img
+                        src="img/Mejoradas/20261020_110903-v2.webp"
+                        alt="Bolsas de sales de baño junto a flores secas, especias y frascos de aceites"
+                        width="350">
+
+                    <p>
+                        Una mezcla de sales con manzanilla, caléndula y pétalos
+                        de rosa. Las flores aportan color y notas herbales
+                        a esta preparación hecha a mano.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Ingredientes:</strong>
+                            Sales de baño, manzanilla, caléndula y pétalos de rosa.
+                        </li>
+                        <li>
+                            <strong>Aroma:</strong>
+                            Floral y herbal.
+                        </li>
+                        <li>
+                            <strong>Beneficios sensoriales:</strong>
+                            Aportan aroma y un toque floral al agua, para disfrutar
+                            de un baño perfumado.
+                        </li>
+                        <li>
+                            <strong>Presentación:</strong>
+                            Bolsa de papel kraft con cierre y ventana transparente.
+                        </li>
+                    </ul>
+
+                    <h4>Nuestra mezcla botánica</h4>
+
+                    <p>
+                        Las flores secas y las hierbas forman parte del aspecto
+                        de nuestra mezcla. A través de la ventana del envase
+                        puedes apreciar sus colores y texturas.
+                    </p>
+
+                    <p>
+                        <a
+                            class="btn boton-whatsapp"
+                            href="https://wa.me/56930549400?text=Hola%2C%20quisiera%20consultar%20por%20las%20sales%20de%20ba%C3%B1o%20con%20flores%20y%20hierbas."
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Consultar por WhatsApp
+                        </a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section
+            class="pedidos-catalogo"
+            id="pedidos"
+            aria-labelledby="titulo-pedidos">
+            <h2 id="titulo-pedidos">Consultas y pedidos</h2>
+
+            <p>
+                Escríbenos para conocer los precios, tamaños y disponibilidad
+                de las sales de baño.
+            </p>
+            <p>
+                También puedes consultar por sus ingredientes e indicaciones de uso.
+            </p>
+            <p>Teléfono: +56 9 3054 9400</p>
+
+            <div class="velas-controles">
+                <a
+                    class="btn boton-whatsapp"
+                    href="https://wa.me/56930549400"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    Consultar por WhatsApp
+                </a>
+
+                <a class="btn boton-marca" href="productos.html">
+                    Volver a las categorías
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer pie-marca">
+        <div class="container text-center">
+            <p>Luz &amp; Bloom — Velas y jabones artesanales.</p>
+            <p>Hecho a mano, pensado para tus pequeños momentos.</p>
+
+            <div class="pie-botones">
+                <a class="btn boton-destacado" href="contacto.html">
+                    Contáctanos
+                </a>
+                <a class="btn boton-marca" href="#inicio">
+                    Volver al inicio
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <template id="plantilla-vela">
+        <li class="vitrina-tarjeta vela-tarjeta">
+            <div class="vela-columna">
+                <button class="vela-foto" type="button" aria-haspopup="dialog">
+                    <img alt="">
+                </button>
+
+                <div class="vela-miniaturas" role="group" hidden></div>
+
+                <p class="vitrina-nombre"></p>
+
+                <div class="vela-tarjeta-boton">
+                    <button
+                        class="btn boton-destacado vela-ver"
+                        type="button"
+                        aria-expanded="false">
+                        Ver
+                    </button>
+                </div>
+            </div>
+        </li>
+    </template>
+
+    <dialog id="visor-vela" aria-label="Fotografía ampliada">
+        <img id="foto-visor" alt="">
+    </dialog>
+</body>
+</html>

@@ -1,0 +1,337 @@
+/*
+ * Adaptación del template Assan Beauty Spa para Luz & Bloom.
+ */
+
+:root {
+    --fondo: #faf5e9;
+    --superficie: #fffdf7;
+    --texto: #33251e;
+    --cacao: #71300b;
+    --oliva: #465035;
+    --borde: #d8c9ad;
+    --whatsapp: #176b38;
+}
+
+/* Base */
+
+* {
+    box-sizing: border-box;
+}
+
+body.luz-bloom {
+    margin: 0;
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: visible;
+}
+
+.luz-bloom h1,
+.luz-bloom h2,
+.luz-bloom h3 {
+    color: var(--cacao);
+    font-family: Georgia, serif;
+    font-weight: bold;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+.luz-bloom h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.luz-bloom p {
+    margin-bottom: 1rem;
+}
+
+.luz-bloom img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.luz-bloom a {
+    color: var(--cacao);
+}
+
+.luz-bloom a:focus-visible,
+.luz-bloom button:focus-visible {
+    outline: 3px solid var(--oliva) !important;
+    outline-offset: 4px;
+}
+
+/* Encabezado */
+
+.luz-bloom .default-header {
+    background-color: var(--superficie);
+    border-bottom: 1px solid var(--borde);
+}
+
+.cabecera-marca {
+    display: grid;
+    grid-template-columns: 14rem minmax(0, 1fr);
+    grid-template-areas:
+        "marca canales"
+        "marca menu";
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.5rem;
+}
+
+.marca {
+    grid-area: marca;
+}
+
+.marca > a {
+    display: inline-block;
+}
+
+.luz-bloom .marca-logo {
+    width: 190px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.luz-bloom .marca h1 {
+    margin: 0 0 0.4rem;
+    font-size: 1.7rem;
+}
+
+.marca p {
+    max-width: 14rem;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.canales {
+    grid-area: canales;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+
+.menu-principal {
+    grid-area: menu;
+    align-self: end;
+}
+
+.menu-principal ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Botones */
+
+.luz-bloom .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    max-width: 100%;
+    padding: 0.7rem 1.1rem;
+    border: 1px solid var(--cacao);
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-transform: none;
+    text-decoration: none;
+    white-space: normal;
+    cursor: pointer;
+}
+
+.luz-bloom .boton-marca {
+    background-color: var(--superficie);
+    color: var(--cacao);
+}
+
+.luz-bloom .boton-destacado {
+    border-color: var(--oliva);
+    background-color: var(--oliva);
+    color: white;
+}
+
+.luz-bloom .boton-whatsapp {
+    border-color: var(--whatsapp);
+    background-color: var(--whatsapp);
+    color: white;
+}
+
+.luz-bloom .btn:hover,
+.luz-bloom .btn[aria-current="page"] {
+    border-color: var(--cacao);
+    background-color: var(--cacao);
+    color: white;
+}
+
+/* Títulos del template */
+
+.luz-bloom .section-title {
+    margin-bottom: 2rem;
+}
+
+.luz-bloom .section-title::after {
+    background-color: var(--oliva);
+}
+
+.luz-bloom .section-title h2 {
+    margin-bottom: 0;
+}
+
+/* Bienvenida */
+
+.bienvenida {
+    padding: 3rem 0 2rem;
+}
+
+.bienvenida-cierre {
+    margin-top: 1.5rem;
+    color: var(--oliva);
+}
+
+/* Productos */
+
+.productos-inicio {
+    padding: 1.5rem 0 3rem;
+}
+
+.columna-producto {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.tarjeta-producto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    background-color: var(--superficie);
+}
+
+.producto-foto {
+    display: block;
+    overflow: hidden;
+    background-color: var(--superficie);
+}
+
+.luz-bloom .producto-foto img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.producto-foto:hover img {
+    transform: scale(1.03);
+}
+
+.producto-contenido {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.4rem;
+}
+
+.luz-bloom .producto-contenido h3 {
+    margin: 0 0 1.25rem;
+    font-size: 1.35rem;
+}
+
+.producto-enlace {
+    margin-top: auto;
+}
+
+/* Creaciones */
+
+.creaciones {
+    padding: 3rem 0;
+    border-top: 1px solid var(--borde);
+    background-color: var(--superficie);
+}
+
+.lista-creaciones {
+    margin: 1.5rem 0 2rem;
+    padding-left: 1.25rem;
+}
+
+.lista-creaciones li {
+    margin-bottom: 1rem;
+}
+
+/* Pie de página */
+
+.luz-bloom .footer.pie-marca {
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--borde);
+    background-color: var(--fondo);
+    color: var(--texto);
+}
+
+.pie-marca p {
+    margin-bottom: 0.5rem;
+}
+
+.pie-botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+/* Pantallas pequeñas */
+
+@media (max-width: 767px) {
+    .cabecera-marca {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "marca"
+            "canales"
+            "menu";
+        row-gap: 1.25rem;
+    }
+
+    .canales,
+    .menu-principal ul {
+        justify-content: flex-start;
+    }
+
+    .bienvenida {
+        padding-top: 2rem;
+    }
+
+    .productos-inicio,
+    .creaciones {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .luz-bloom a,
+    .luz-bloom .btn,
+    .luz-bloom .simple-hover img {
+        transition: none;
+    }
+
+    .producto-foto:hover img {
+        transform: none;
+    }
+}
